@@ -1,9 +1,341 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Meal Plan</title>
+<meta charset="UTF-8" />
+<title>September Family Meal Plan – Batch-Cook • $300 • Detailed Recipes + Monthly Shopping List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root{
+    --ink:#172a2f;--mint:#e9fff6;--sea:#116b61;--sky:#e8f4f1;--gold:#ffd166;--slate:#5f6b7a;--card:#ffffff;--soft:#f7fbfa;
+  }
+  html,body{margin:0;padding:0;background:#fafafa;color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  header{padding:24px 18px;background:linear-gradient(135deg,var(--sky),#fff)}
+  h1{margin:0 0 10px;font-size:28px;color:var(--sea)}
+  .intro{max-width:1000px}
+  .pill{display:inline-block;background:var(--sea);color:#fff;border-radius:999px;padding:2px 10px;font-size:12px;margin-right:6px}
+  .badge{display:inline-block;background:#0b4a43;color:#fff;border-radius:6px;padding:2px 6px;font-size:12px;margin-left:6px}
+  .style{display:inline-block;border:1px solid var(--sea);color:var(--sea);border-radius:6px;padding:1px 6px;margin-left:6px;font-size:12px}
+  main{max-width:1200px;margin:20px auto;padding:0 16px}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  th,td{border-bottom:1px solid #eef2f7;padding:10px;vertical-align:top}
+  th{background:#f3fbf9;color:#0f3d37;text-align:left;font-weight:700}
+  tr:last-child td{border-bottom:none}
+  a{color:#0b6b61;text-decoration:none}
+  a:hover{text-decoration:underline}
+  section{margin:28px 0}
+  .card{background:var(--card);border:1px solid #edf2f7;border-radius:14px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);margin:18px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+  .small{font-size:13px;color:var(--slate)}
+  h2{color:#145e54;margin:14px 0 8px}
+  h3{color:#145e54;margin:10px 0 6px}
+  ul{margin:8px 0 8px 20px}
+  ol{margin:8px 0 8px 20px}
+  .matrix{width:100%;border-collapse:collapse;margin-top:8px}
+  .matrix th,.matrix td{border:1px solid #e5e7eb;padding:6px;font-size:13px}
+  .money{background:var(--mint);border:1px dashed var(--sea);padding:8px;border-radius:10px}
+  .foot{font-size:12px;color:#6b7280;margin-top:10px}
+  .qty{font-variant-numeric:tabular-nums}
+  .print-btn{display:inline-block;background:#145e54;color:#fff;border:none;border-radius:10px;padding:8px 12px;cursor:pointer}
+  .print-btn:hover{background:#0f4f49}
+  #shopping .cat{font-weight:700;color:#0f3d37;margin-top:8px}
+  .note{background:#fff7ed;border-left:4px solid #f59e0b;padding:8px 12px;border-radius:8px}
+  .right{float:right}
+  /* Print styles */
+  @media print{
+    header{background:#fff}
+    .print-btn{display:none}
+    a{text-decoration:none;color:#000}
+    .card{break-inside:avoid}
+  }
+</style>
 </head>
 <body>
-    <h1>Welcome to My Meal Plan</h1>
-    <p>Your meal plan will be displayed here.</p>
-</body>
-</html>
+<header>
+  <h1>September 30-Day Meal Plan (Batch-Cook • $300)</h1>
+  <p class="intro">
+    Active eaters: <b>4</b> (drops to <b>3 at lunch Sept&nbsp;22–29</b> while the senior woman with diabetes is away).
+    Focus: <span class="pill">Lactating (high-protein)</span> <span class="pill">Omnivore (packable)</span>
+    <span class="pill">Diabetes-friendly</span> <span class="pill">Weight-loss carnivore</span>.
+    Dinners stretch <b>two nights</b>. Lunches alternate between leftovers and a simple <b>alternate lunch</b> to prevent repetition. Labor Day grilling on Sept 1.
+  </p>
+  <p class="money"><b>Breakfast rotation (remembered):</b> hot oatmeal, grits, eggs, pancakes, waffles, cereal, smoothies, bagels. <b>Excluded:</b> yogurt, cottage cheese, overnight oats, okra, squash. Default milk: <b>oat milk</b>.</p>
+</header>
+
+<main>
+
+<!-- ===================== PLANNER ===================== -->
+<section id="planner">
+  <h2>Monthly Planner (September 2025)</h2>
+  <p class="small">Click a linked dish to jump to its detailed recipe card. Dinner cells may span 2–3 days (batch-cook).</p>
+  <table>
+    <tr>
+      <th>Date</th><th>Breakfast</th><th>Lunch (with variety)</th><th>Snack</th><th>Dinner (Batch-cook ≥2 nights)</th>
+    </tr>
+
+    <!-- Week 1 -->
+    <tr>
+      <td>Mon Sep&nbsp;1 (Labor Day)</td>
+      <td><a href="#bf-grits-eggs">Savory Grits & Eggs</a> <span class="style">Southern</span> <span class="badge">≤20</span></td>
+      <td>Grill-out sampler wrap (chicken/burger + peppers, corn)</td>
+      <td>Watermelon wedges • peanuts</td>
+      <td><a href="#grill-day">Labor Day Grill-Out</a> <span class="style">Caribbean</span> <span class="badge">≤30</span></td>
+    </tr>
+
+    <tr>
+      <td>Tue Sep&nbsp;2</td>
+      <td><a href="#bf-hot-oats">Hot Oatmeal Master</a> <span class="style">Southern</span> <span class="badge">5-ingredient</span></td>
+      <td>Leftover Grill-Out bowl (rice + grilled chicken/peppers)</td>
+      <td>Cucumber & hummus</td>
+      <td rowspan="2"><a href="#lentil-stew">Tomato-Lentil Stew over Rice</a> <span class="style">Mediterranean</span> <span class="badge">≤30</span></td>
+    </tr>
+    <tr>
+      <td>Wed Sep&nbsp;3</td>
+      <td><a href="#bf-bagel-egg">Bagel Egg Sandwich</a> <span class="style">Southern</span> <span class="badge">≤15</span></td>
+      <td><b>Alt Lunch:</b> Tuna or Egg Salad + Crackers & Cucumbers</td>
+      <td>Peach</td>
+    </tr>
+
+    <tr>
+      <td>Thu Sep&nbsp;4</td>
+      <td><a href="#bf-pancakes">Batch Pancakes</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+      <td>Leftover Lentil Stew + side salad (thermos)</td>
+      <td>Popcorn</td>
+      <td rowspan="2"><a href="#chicken-sheetpan">Sheet-Pan Chicken & Peppers</a> <span class="style">Southern</span> <span class="badge">5-ingredient</span></td>
+    </tr>
+    <tr>
+      <td>Fri Sep&nbsp;5</td>
+      <td><a href="#bf-smoothie">Green Peach Smoothie</a> <span class="style">Mediterranean</span> <span class="badge">≤10</span></td>
+      <td><b>Alt Lunch:</b> Veggie Fried Rice (leftover rice + frozen veg + egg)</td>
+      <td>Apples + nut butter</td>
+    </tr>
+
+    <tr>
+      <td>Sat Sep&nbsp;6</td>
+      <td><a href="#bf-cereal">Simple Cereal Bowl</a> <span class="style">Mediterranean</span> <span class="badge">≤5</span></td>
+      <td>Leftover Sheet-Pan Wraps</td>
+      <td>Grapes</td>
+      <td rowspan="2"><a href="#eggplant-pasta">Eggplant-Tomato Pasta</a> <span class="style">Mediterranean</span> <span class="badge">≤30</span></td>
+    </tr>
+    <tr>
+      <td>Sun Sep&nbsp;7</td>
+      <td><a href="#bf-waffles">Freezer Waffles</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+      <td><b>Alt Lunch:</b> Cucumber & Chickpea Salad (lemon-garlic vinaigrette)</td>
+      <td>Trail mix</td>
+    </tr>
+
+    <!-- Week 2 -->
+    <tr>
+      <td>Mon Sep&nbsp;8</td>
+      <td><a href="#bf-eggs-toast">Eggs & Toast</a> <span class="style">Southern</span> <span class="badge">≤10</span></td>
+      <td>Chili bowls (thermos)</td>
+      <td>Corn on the cob (leftover)</td>
+      <td rowspan="2"><a href="#beef-chili">Beef & Bean Chili</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+    </tr>
+    <tr>
+      <td>Tue Sep&nbsp;9</td>
+      <td><a href="#bf-grits-eggs">Savory Grits & Eggs</a> <span class="style">Southern</span> <span class="badge">≤20</span></td>
+      <td><b>Alt Lunch:</b> Baked Potatoes w/ toppings (beans, salsa, scallions)</td>
+      <td>Peach slices</td>
+    </tr>
+
+    <tr>
+      <td>Wed Sep&nbsp;10</td>
+      <td><a href="#bf-hot-oats">Hot Oatmeal Master</a> <span class="style">Southern</span> <span class="badge">5-ingredient</span></td>
+      <td>Fish taco bowls (rice + slaw)</td>
+      <td>Carrot sticks</td>
+      <td rowspan="2"><a href="#fish-tacos">Baked Fish Tacos + Slaw</a> <span class="style">Caribbean</span> <span class="badge">≤30</span></td>
+    </tr>
+    <tr>
+      <td>Thu Sep&nbsp;11</td>
+      <td><a href="#bf-bagel-egg">Bagel Egg Sandwich</a> <span class="style">Southern</span> <span class="badge">≤15</span></td>
+      <td><b>Alt Lunch:</b> Black Bean & Corn Salad (lime, cilantro)</td>
+      <td>Popcorn</td>
+    </tr>
+
+    <tr>
+      <td>Fri Sep&nbsp;12</td>
+      <td><a href="#bf-pancakes">Batch Pancakes</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+      <td>Stir-fry bowls</td>
+      <td>Apple + peanuts</td>
+      <td rowspan="2"><a href="#chicken-stirfry">Chicken & Broccoli Stir-Fry</a> <span class="style">Mediterranean</span> <span class="badge">≤25</span></td>
+    </tr>
+    <tr>
+      <td>Sat Sep&nbsp;13</td>
+      <td><a href="#bf-smoothie">Green Peach Smoothie</a> <span class="style">Mediterranean</span> <span class="badge">≤10</span></td>
+      <td><b>Alt Lunch:</b> Veggie Omelet / Scramble</td>
+      <td>Grapes</td>
+    </tr>
+
+    <tr>
+      <td>Sun Sep&nbsp;14</td>
+      <td><a href="#bf-eggs-toast">Eggs & Toast</a> <span class="style">Southern</span> <span class="badge">≤10</span></td>
+      <td>Stuffed pepper bowls</td>
+      <td>Cucumbers & hummus</td>
+      <td rowspan="2"><a href="#stuffed-peppers">Stuffed Bell Peppers</a> <span class="style">Mediterranean</span> <span class="badge">≤30</span></td>
+    </tr>
+    <tr>
+      <td>Mon Sep&nbsp;15</td>
+      <td><a href="#bf-waffles">Freezer Waffles</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+      <td><b>Alt Lunch:</b> Tomato & Cucumber Sandwich (whole-grain)</td>
+      <td>Trail mix</td>
+    </tr>
+
+    <tr>
+      <td>Tue Sep&nbsp;16</td>
+      <td><a href="#bf-hot-oats">Hot Oatmeal Master</a> <span class="style">Southern</span> <span class="badge">5-ingredient</span></td>
+      <td>BBQ chicken wraps</td>
+      <td>Peach</td>
+      <td rowspan="2"><a href="#bbq-chicken">BBQ Chicken & Corn</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+    </tr>
+    <tr>
+      <td>Wed Sep&nbsp;17</td>
+      <td><a href="#bf-cereal">Simple Cereal Bowl</a> <span class="style">Mediterranean</span> <span class="badge">≤5</span></td>
+      <td><b>Alt Lunch:</b> Southwestern Salad (greens, corn, black beans, salsa)</td>
+      <td>Apple</td>
+    </tr>
+
+    <tr>
+      <td>Thu Sep&nbsp;18</td>
+      <td><a href="#bf-grits-eggs">Savory Grits & Eggs</a> <span class="style">Southern</span> <span class="badge">≤20</span></td>
+      <td>Tomato soup & grilled cheese</td>
+      <td>Grapes</td>
+      <td rowspan="2"><a href="#tomato-soup">Tomato-Basil Soup & Grilled Cheese</a> <span class="style">Mediterranean</span> <span class="badge">≤25</span></td>
+    </tr>
+    <tr>
+      <td>Fri Sep&nbsp;19</td>
+      <td><a href="#bf-pancakes">Batch Pancakes</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+      <td><b>Alt Lunch:</b> Hummus & Veg Plate (pita/bread, cucumbers, carrots)</td>
+      <td>Popcorn</td>
+    </tr>
+
+    <tr>
+      <td>Sat Sep&nbsp;20</td>
+      <td><a href="#bf-eggs-toast">Eggs & Toast</a> <span class="style">Southern</span> <span class="badge">≤10</span></td>
+      <td>Meatball rice bowls</td>
+      <td>Peach</td>
+      <td rowspan="2"><a href="#beef-meatballs">Beef Meatballs & Rice</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+    </tr>
+    <tr>
+      <td>Sun Sep&nbsp;21</td>
+      <td><a href="#bf-smoothie">Green Peach Smoothie</a> <span class="style">Mediterranean</span> <span class="badge">≤10</span></td>
+      <td><b>Alt Lunch:</b> Meatball + Veg Skewers (air-fryer/oven)</td>
+      <td>Carrots & hummus</td>
+    </tr>
+
+    <!-- Week 4 (Senior woman away: lunches for senior man; others may have leftovers) -->
+    <tr>
+      <td>Mon Sep&nbsp;22</td>
+      <td><a href="#bf-hot-oats">Hot Oatmeal Master</a> <span class="style">Southern</span> <span class="badge">5-ingredient</span></td>
+      <td>Salmon bowls (rice + cucumbers)</td>
+      <td>Apple</td>
+      <td rowspan="2"><a href="#baked-salmon">Baked Salmon & Garlicky Greens</a> <span class="style">Mediterranean</span> <span class="badge">≤25</span> <span class="badge">Scaled for 3</span></td>
+    </tr>
+    <tr>
+      <td>Tue Sep&nbsp;23</td>
+      <td><a href="#bf-grits-eggs">Savory Grits & Eggs</a> <span class="style">Southern</span> <span class="badge">≤20</span></td>
+      <td><b>Alt Lunch:</b> Egg Salad on Greens (or tuna if preferred)</td>
+      <td>Grapes</td>
+    </tr>
+
+    <tr>
+      <td>Wed Sep&nbsp;24</td>
+      <td><a href="#bf-bagel-egg">Bagel Egg Sandwich</a> <span class="style">Southern</span> <span class="badge">≤15</span></td>
+      <td>Cabbage roll bowls</td>
+      <td>Popcorn</td>
+      <td rowspan="2"><a href="#cabbage-rolls">Stuffed Cabbage Rolls</a> <span class="style">Mediterranean</span> <span class="badge">≤30</span> <span class="badge">Scaled for 3</span></td>
+    </tr>
+    <tr>
+      <td>Thu Sep&nbsp;25</td>
+      <td><a href="#bf-waffles">Freezer Waffles</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+      <td><b>Alt Lunch:</b> Small-Batch Lentil Soup (pantry-based)</td>
+      <td>Peach</td>
+    </tr>
+
+    <tr>
+      <td>Fri Sep&nbsp;26</td>
+      <td><a href="#bf-pancakes">Batch Pancakes</a> <span class="style">Southern</span> <span class="badge">≤30</span></td>
+      <td>Creamy chicken pasta bowls</td>
+      <td>Cucumber & hummus</td>
+      <td rowspan="3"><a href="#chicken-pasta">Creamy Chicken Pasta (Light)</a> <span class="style">Mediterranean</span> <span class="badge">≤25</span></td>
+    </tr>
+    <tr>
+      <td>Sat Sep&nbsp;27</td>
+      <td><a href="#bf-cereal">Simple Cereal Bowl</a> <span class="style">Mediterranean</span> <span class="badge">≤5</span></td>
+      <td><b>Alt Lunch:</b> Greek Salad w/ Chickpeas or Chicken</td>
+      <td>Apples + peanut butter</td>
+    </tr>
+    <tr>
+      <td>Sun Sep&nbsp;28</td>
+      <td><a href="#bf-hot-oats">Hot Oatmeal Master</a> <span class="style">Southern</span> <span class="badge">5-ingredient</span></td>
+      <td>Pasta leftovers <em>or</em> repeat Greek salad</td>
+      <td>Grapes</td>
+    </tr>
+
+    <tr>
+      <td>Mon Sep&nbsp;29</td>
+      <td><a href="#bf-grits-eggs">Savory Grits & Eggs</a> <span class="style">Southern</span> <span class="badge">≤20</span></td>
+      <td>Enchilada bake bowls</td>
+      <td>Popcorn</td>
+      <td rowspan="2"><a href="#enchilada-bake">Chicken Enchilada Bake</a> <span class="style">Mexican</span> <span class="badge">≤30</span></td>
+    </tr>
+    <tr>
+      <td>Tue Sep&nbsp;30</td>
+      <td><a href="#bf-smoothie">Green Peach Smoothie</a> <span class="style">Mediterranean</span> <span class="badge">≤10</span></td>
+      <td><b>Alt Lunch:</b> Quesadillas (tortillas + cheese/beans/chicken)</td>
+      <td>Peach slices</td>
+    </tr>
+  </table>
+  <p class="foot">“Alt Lunch” items are inexpensive, quick builds (2–10 minutes) that keep dinners stretching across both nights without boredom.</p>
+</section>
+
+<!-- ===================== DETAILED RECIPE CARDS ===================== -->
+<section id="recipes">
+  <h2>Detailed Recipe Cards</h2>
+
+  <!-- TEMPLATE NOTE: each card includes Base Ingredients (with quantities), Pantry Staples, 6-steps max, Storage/Reheat, Approx Nutrition, Substitution Matrix, and Packable Tips. -->
+
+  <div id="grill-day" class="card">
+    <h3>Labor Day Grill-Out <span class="style">Caribbean</span> <span class="badge">≤30</span> <span class="right small">Yield: 8–10 plates + leftovers</span></h3>
+    <div class="grid">
+      <div>
+        <b>Base Ingredients</b>
+        <ul>
+          <li>Chicken breasts 4 lb (8 small fillets)</li>
+          <li>Lean beef patties 8 (¼ lb each)</li>
+          <li>Bell peppers 6, thick strips</li>
+          <li>Corn on the cob 8 ears</li>
+          <li>Watermelon 1, cut in wedges</li>
+        </ul>
+      </div>
+      <div>
+        <b>Pantry Staples</b>
+        <ul>
+          <li>Oil 3 Tbsp • Salt 2 tsp • Black pepper 1 tsp</li>
+          <li>Jerk blend 2 Tbsp (or 1 tsp each allspice, thyme, chili, +1 tsp brown sugar)</li>
+        </ul>
+      </div>
+      <div>
+        <b>Steps (Beginner-Friendly)</b>
+        <ol>
+          <li>Preheat grill to medium-high (450°F). Clean & oil grates.</li>
+          <li>Season chicken with 1 Tbsp oil + jerk blend + 1 tsp salt.</li>
+          <li>Season patties with ½ tsp salt + pepper both sides.</li>
+          <li>Toss peppers & corn with 2 Tbsp oil + ½ tsp salt.</li>
+          <li>Grill chicken 5–6 min/side to 165°F; burgers 3–4 min/side; peppers/corn until charred-tender (8–10 min total, turn occasionally).</li>
+          <li>Rest meats 5 min. Serve with watermelon.</li>
+        </ol>
+      </div>
+    </div>
+    <p><b>Storage/Reheat:</b> Cool within 2 hrs. Refrigerate 3–4 days. Reheat chicken/peppers in skillet 5–6 min; corn 2–3 min in boiling water or scrape kernels for bowls.</p>
+    <p class="small"><b>Approx/serving:</b> ~480 kcal (burger + chicken + veg) • 35–45g protein • lower carbs if skipping bun.</p>
+    <table class="matrix">
+      <tr><th>Diet Profile</th><th>Swap</th><th>Portion Guidance</th><th>Carb Notes</th><th>Rationale</th></tr>
+      <tr><td>Lactating</td><td>Add 1 egg on burger, extra chicken</td><td>30–35g protein</td><td>Whole-grain bun/corn</td><td>Protein + complex carbs</td></tr>
+      <tr><td>Diabetes-friendly</td><td>Double peppers; skip bun</td><td>¼ plate starch</td><td>Corn counts as starch</td><td>Lower GI</td></tr>
+      <tr><td>Weight loss (carnivore)</td><td>Chicken + lettuce wrap</td><td>350–500 kcal</td><td>Veg side</td><td>High satiety</td></tr>
+      <tr><td>Omnivore</td><td>As written</td><td>30–40g protein</td><td>Balanced plate</td><td>Hearty & packable</td></tr>
+    </table>
+    <p class="small"><b>Packable:</b> Slice chicken + peppers; pack with rice and salsa. Keep ice pack with meats.</p>
+  </div>
+
+  <!-- [TRUNCATED: the file will be split and uploaded in parts if needed] -->
